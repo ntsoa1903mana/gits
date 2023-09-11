@@ -9,7 +9,7 @@ ENV PATH="/app/venv/bin:$PATH"
 
 RUN apt-get update && \
     apt-get install -y --no-install-recommends build-essential libffi-dev cmake libcurl4-openssl-dev nodejs screen && \
-    python -m pip install --no-cache-dir -U pip==<desired_pip_version> && \  # Replace <desired_pip_version> with the version you want
+    python -m pip install --no-cache-dir -U pip==23.2.1 && \  # Install pip version 23.2.1
     pip install --no-cache-dir -r requirements.txt
 
 COPY . .
@@ -18,3 +18,4 @@ RUN chmod +x ./app.py
 RUN chmod -R 777 /app
 CMD screen -d -m python3 check.py
 CMD uvicorn app:app --host 0.0.0.0 --port 7860
+
