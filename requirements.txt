@@ -1,5 +1,5 @@
 fastapi
 uvicorn
-g4f
+g4f==g4f 0.0.2.8 
 
 
