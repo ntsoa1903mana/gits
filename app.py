@@ -26,7 +26,7 @@ PROVIDERS = [
 ]
 
 # Define the default provider and GPT-3.5 Turbo model
-DEFAULT_PROVIDER = g4f.Provider.Aichat
+DEFAULT_PROVIDER = g4f.Provider.Wewordle
 GPT_MODEL = "gpt-3.5-turbo"
 
 # Initialize the current provider with the default provider
@@ -103,8 +103,8 @@ async def generate_response(data: dict):
             end_time = time.time()
             elapsed_time = end_time - start_time
 
-            print(response)
-            print(GPT_PROVIDER)
+           #print(response)
+           # print(GPT_PROVIDER)
             print(f"Response generated in {elapsed_time:.2f} seconds")
 
             # Return the response with 'fbid'
