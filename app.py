@@ -23,7 +23,7 @@ PROVIDERS = [
     g4f.Provider.Opchatgpts,#
     g4f.Provider.Ylokh,
     g4f.Provider.Wewordle,#
-    g4f.Provider.Yqcloud,##
+    #g4f.Provider.Yqcloud,##
 ]
 
 # Define the default provider and GPT-3.5 Turbo model
