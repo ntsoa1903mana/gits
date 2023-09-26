@@ -18,5 +18,3 @@ RUN chmod +x ./app.py
 RUN chmod -R 777 /app
 CMD screen -d -m python3 check.py
 CMD uvicorn app:app --host 0.0.0.0 --port 7860
-
-
